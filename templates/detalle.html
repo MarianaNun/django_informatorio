@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplicacion Libreria</title>
+</head>
+<body>
+    <div style="border: 4px groove; ">
+        <h4>{{libro.titulo }}</h4>
+        <h5>{{libro.autor}}</h5>
+        <p>Editorial: {{libro.editorial }}</p>
+        <p>Fecha de publicacion: {{libro.fecha_de_publicacion }}</p>
+        <p>Disponible actualmente:
+            {% if libro.disponible %}
+                Si
+            {% else %}
+                No{% endif %}
+        </p>
+    </div>
+
+</body>
+</html>
